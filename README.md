@@ -1,6 +1,5 @@
 ## CSCI 1170: Group Assignment 2
 
-- Group Name: Iron Man 2
 - Game Name: Gridlock
 - Authors: Saahir Monowar, Abdulrahman Mohamed Saif Al Kindi, Dhruvil Trivedi, Meet Kumar Patel, Wenhui Zhao
 
