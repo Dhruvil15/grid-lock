@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+    
+        <meta charset="utf-8">
+
+        <title>GRID LOCK</title>
+  
+    </head>
+  
+    <body>
+
+        <header>
+
+            <p><h1> GRID LOCK </h1></p>
+
+            <button type="button" id="toggle-button" onclick="darkMode()">Dark Mode</button>
+    
+        </header>
+
+        <!-- Wenhui's welcome code, which couldnt be implemented properly and had to be removed -->
+
+        <!-- <div id="zero-puzzle" class="puzzle">
+
+            <section onload="Wenhui()">
+              <button type="button" id="button">
+              <img src="img/game.jpeg" alt="start"><br>
+              <strong>Press Start</strong>
+              </button>
+            </section> 
+            <cite>Source:<a href="https://pngtree.com/freepng/red-start-game-button-switch-icon_5321017.html" target="_blank">https://pngtree.com/freepng/red-start-game-button-switch-icon_5321017.html</a></cite>
+          </div> -->
+        
+          <!-- All grids in puzzle classes were worked on by Saahir -->
+
+          <!-- All puzzle content for puzzles 1, 2 and 3 were worked on by Abdulrahman -->
+        
+        <div id="first-puzzle" class="puzzle" >
+           
+            <p id="para1">
+
+                <button type="button" name="a1" id="p1a1" onclick="color('p1a1')">F</button>
+                <button type="button" name="a2" id="p1a2" onclick="color('p1a2')">H</button>
+                <button type="button" name="a3" id="p1a3" onclick="color('p1a3')">B</button>
+                <button type="button" name="a4" id="p1a4" onclick="color('p1a4')">C</button>
+                <button type="button" name="a5" id="p1a5" onclick="color('p1a5')">A</button>
+                <br>
+                <button type="button" name="b1" id="p1b1" onclick="color('p1b1')">D</button>
+                <button type="button" name="b2" id="p1b2" onclick="color('p1b2')">R</button>
+                <button type="button" name="b3" id="p1b3" onclick="color('p1b3')">E</button>
+                <button type="button" name="b4" id="p1b4" onclick="color('p1b4')">F</button>
+                <button type="button" name="b5" id="p1b5"onclick="color('p1b5')">G</button>
+                <br>
+                <button type="button" name="c1" id="p1c1" onclick="color('p1c1')">H</button>
+                <button type="button" name="c2" id="p1c2" onclick="color('p1c2')">I</button>
+                <button type="button" name="c3" id="p1c3" onclick="color('p1c3')">U</button>
+                <button type="button" name="c4" id="p1c4" onclick="color('p1c4')">J</button>
+                <button type="button" name="c5" id="p1c5" onclick="color('p1c5')">K</button>
+                <br>
+                <button type="button" name="d1" id="p1d1" onclick="color('p1d1')">L</button>
+                <button type="button" name="d2" id="p1d2" onclick="color('p1d2')">M</button>
+                <button type="button" name="d3" id="p1d3" onclick="color('p1d3')">N</button>
+                <button type="button" name="d4" id="p1d4" onclick="color('p1d4')">T</button>
+                <button type="button" name="d5" id="p1d5" onclick="color('p1d5')">O</button>
+                <br>
+                <button type="button" name="e1" id="p1e1" onclick="color('p1e1')">P</button>
+                <button type="button" name="e2" id="p1e2" onclick="color('p1e2')">Q</button>
+                <button type="button" name="e3" id="p1e3" onclick="color('p1e3')">R</button>
+                <button type="button" name="e4" id="p1e4" onclick="color('p1e4')">S</button>
+                <button type="button" name="e5" id="p1e5" onclick="color('p1e5')">S</button>
+                
+            </p>
+        
+            <!-- Hint section worked on by Abdulrahman -->
+
+            <a href="#hint1" onclick="showThisDiv('p-hint1')" id="link-to-hint1"><strong>Click here for a hint</strong></a>
+                
+                <div id="hint1">
+        
+                    <p id="p-hint1">
+                        
+                        <em><strong>
+
+                            What do
+                    
+                        <br> Bananas, 
+                        <br> Carrots,
+                        <br> peaches
+                        <br> and Oranges
+                        <br> have in common
+        
+                        </strong>
+                        </em>
+                    
+                    </p>
+        
+                </div> 
+        
+                <br>
+                  
+            </div>
+
+        <!--Name: Dhruvil Trivedi 
+            Banner ID: B00839059 
+            The CLICK ME button is developed by me in which user is expected to click the button in order to move to the next puzzel -->
+
+        <div id="first-submit">
+
+            <button type="button" name="submit" id="submit1" onclick="showGrid('0')"><strong>CLICK ME FOR THE NEXT LEVEL !</strong></button>
+        
+        </div>
+    
+        <div id="second-puzzle" class="puzzle">
+
+            <p id="para2">
+            
+                <button type="button" name="a1" id="p2a1" onclick="color('p2a1')">B</button>
+                <button type="button" name="a2" id="p2a2" onclick="color('p2a2')">A</button>
+                <button type="button" name="a3" id="p2a3" onclick="color('p2a3')">B</button>
+                <button type="button" name="a4" id="p2a4" onclick="color('p2a4')">C</button>
+                <button type="button" name="a5" id="p2a5" onclick="color('p2a5')">D</button>
+                <button type="button" name="a6" id="p2a6" onclick="color('p2a6')">E</button>
+                <button type="button" name="a7" id="p2a7" onclick="color('p2a7')">F</button>
+                <br>
+                <button type="button" name="b1" id="p2b1" onclick="color('p2b1')">A</button>
+                <button type="button" name="b2" id="p2b2" onclick="color('p2b2')">G</button>    
+                <button type="button" name="b3" id="p2b3" onclick="color('p2b3')">H</button>
+                <button type="button" name="b4" id="p2b4" onclick="color('p2b4')">H</button>
+                <button type="button" name="b5" id="p2b5" onclick="color('p2b5')">I</button>
+                <button type="button" name="b6" id="p2b6" onclick="color('p2b6')">J</button>
+                <button type="button" name="b7" id="p2b7" onclick="color('p2b7')">K</button>
+                <br>
+                <button type="button" name="c1" id="p2c1" onclick="color('p2c1')">N</button>
+                <button type="button" name="c2" id="p2c2" onclick="color('p2c2')">L</button>
+                <button type="button" name="c3" id="p2c3" onclick="color('p2c3')">M</button>
+                <button type="button" name="c4" id="p2c4" onclick="color('p2c4')">O</button>
+                <button type="button" name="c5" id="p2c5" onclick="color('p2c5')">N</button>
+                <button type="button" name="c6" id="p2c6" onclick="color('p2c6')">O</button>
+                <button type="button" name="c7" id="p2c7" onclick="color('p2c7')">P</button>
+                <br>
+                <button type="button" name="d1" id="p2d1" onclick="color('p2d1')">A</button>
+                <button type="button" name="d2" id="p2d2" onclick="color('p2d2')">Q</button>
+                <button type="button" name="d3" id="p2d3" onclick="color('p2d3')">R</button>
+                <button type="button" name="d4" id="p2d4" onclick="color('p2d4')">S</button>
+                <button type="button" name="d5" id="p2d5" onclick="color('p2d5')">M</button>
+                <button type="button" name="d6" id="p2d6" onclick="color('p2d6')">T</button>
+                <button type="button" name="d7" id="p2d7" onclick="color('p2d7')">U</button>
+                <br>
+                <button type="button" name="e1" id="p2e1" onclick="color('p2e1')">N</button>
+                <button type="button" name="e2" id="p2e2" onclick="color('p2e2')">V</button>
+                <button type="button" name="e3" id="p2e3" onclick="color('p2e3')">W</button>
+                <button type="button" name="e4" id="p2e4" onclick="color('p2e4')">X</button>
+                <button type="button" name="e5" id="p2e5" onclick="color('p2e5')">Y</button>
+                <button type="button" name="e6" id="p2e6" onclick="color('p2e6')">E</button>
+                <button type="button" name="e7" id="p2e7" onclick="color('p2e7')">Z</button>
+                <br>
+                <button type="button" name="f1" id="p2f1" onclick="color('p2f1')">A</button>
+                <button type="button" name="f2" id="p2f2" onclick="color('p2f2')">A</button>
+                <button type="button" name="f3" id="p2f3" onclick="color('p2f3')">K</button>
+                <button type="button" name="f4" id="p2f4" onclick="color('p2f4')">E</button>
+                <button type="button" name="f5" id="p2f5" onclick="color('p2f5')">Y</button>
+                <button type="button" name="f6" id="p2f6" onclick="color('p2f6')">S</button>
+                <button type="button" name="f7" id="p2f7" onclick="color('p2f7')">B</button>
+                <br>
+                <button type="button" name="g1" id="p2g1" onclick="color('p2g1')">C</button>
+                <button type="button" name="g2" id="p2g2" onclick="color('p2g2')">D</button>
+                <button type="button" name="g3" id="p2g3" onclick="color('p2g3')">E</button>
+                <button type="button" name="g4" id="p2g4" onclick="color('p2g4')">F</button>
+                <button type="button" name="g5" id="p2g5" onclick="color('p2g5')">G</button>
+                <button type="button" name="g6" id="p2g6" onclick="color('p2g6')">H</button>
+                <button type="button" name="g7" id="p2g7" onclick="color('p2g7')">I</button>
+
+            </p>
+
+            <!-- Hint section worked on by Abdulrahman -->
+
+            <a href="#hint2" onclick="showThisDiv('p-hint2')" id="link-to-hint2"><strong>Click here for a hint</strong></a>
+            
+            <div id="hint2">
+
+                <p id="p-hint2">
+                    <strong>
+                    <em> lose me
+                    <br> and you're 
+                    <br> basically homeless
+                    </em>
+                    </strong>
+                
+                </p>
+            
+            </div>
+
+            <br>
+            
+        </div>
+
+
+        <div id="second-submit">
+            <button type="button" name="submit" id="submit2" onclick="showGrid('1')"><strong>CLICK ME FOR THE NEXT LEVEL !</strong></button>
+        </div>
+
+        <div id="third-puzzle" class="puzzle">     
+
+            <p id="para3">
+
+                <button type="button" name="a1" id="p3a1" onclick="color('p3a1')">K</button>
+                <button type="button" name="a2" id="p3a2" onclick="color('p3a2')">E</button>
+                <button type="button" name="a3" id="p3a3" onclick="color('p3a3')">Y</button>
+                <button type="button" name="a4" id="p3a4" onclick="color('p3a4')">B</button>
+                <button type="button" name="a5" id="p3a5" onclick="color('p3a5')">O</button>
+                <button type="button" name="a6" id="p3a6" onclick="color('p3a6')">A</button>
+                <button type="button" name="a7" id="p3a7" onclick="color('p3a7')">R</button>
+                <button type="button" name="a8" id="p3a8" onclick="color('p3a8')">D</button>
+                <button type="button" name="a9" id="p3a9" onclick="color('p3a9')">A</button>
+                <br>
+                <button type="button" name="b1" id="p3b1" onclick="color('p3b1')">B</button>
+                <button type="button" name="b2" id="p3b2" onclick="color('p3b2')">C</button>
+                <button type="button" name="b3" id="p3b3" onclick="color('p3b3')">D</button>
+                <button type="button" name="b4" id="p3b4" onclick="color('p3b4')">E</button>
+                <button type="button" name="b5" id="p3b5" onclick="color('p3b5')">T</button>
+                <button type="button" name="b6" id="p3b6" onclick="color('p3b6')">A</button>
+                <button type="button" name="b7" id="p3b7" onclick="color('p3b7')">C</button>
+                <button type="button" name="b8" id="p3b8" onclick="color('p3b8')">F</button>
+                <button type="button" name="b9" id="p3b9" onclick="color('p3b9')">G</button>
+                <br>
+                <button type="button" name="c1" id="p3c1" onclick="color('p3c1')">B</button>
+                <button type="button" name="c2" id="p3c2" onclick="color('p3c2')">H</button>
+                <button type="button" name="c3" id="p3c3" onclick="color('p3c3')">N</button>
+                <button type="button" name="c4" id="p3c4" onclick="color('p3c4')">I</button>
+                <button type="button" name="c5" id="p3c5" onclick="color('p3c5')">J</button>
+                <button type="button" name="c6" id="p3c6" onclick="color('p3c6')">K</button>
+                <button type="button" name="c7" id="p3c7" onclick="color('p3c7')">A</button>
+                <button type="button" name="c8" id="p3c8" onclick="color('p3c8')">L</button>
+                <button type="button" name="c9" id="p3c9" onclick="color('p3c9')">W</button>
+                <br>
+                <button type="button" name="d1" id="p3d1" onclick="color('p3d1')">L</button>
+                <button type="button" name="d2" id="p3d2" onclick="color('p3d2')">M</button>
+                <button type="button" name="d3" id="p3d3" onclick="color('p3d3')">N</button>
+                <button type="button" name="d4" id="p3d4" onclick="color('p3d4')">O</button>
+                <button type="button" name="d5" id="p3d5" onclick="color('p3d5')">O</button>
+                <button type="button" name="d6" id="p3d6" onclick="color('p3d6')">P</button>
+                <button type="button" name="d7" id="p3d7" onclick="color('p3d7')">R</button>
+                <button type="button" name="d8" id="p3d8" onclick="color('p3d8')">Q</button>
+                <button type="button" name="d9" id="p3d9" onclick="color('p3d9')">A</button>
+                <br>
+                <button type="button" name="e1" id="p3e1" onclick="color('p3e1')">U</button>
+                <button type="button" name="e2" id="p3e2" onclick="color('p3e2')">R</button>
+                <button type="button" name="e3" id="p3e3" onclick="color('p3e3')">S</button>
+                <button type="button" name="e4" id="p3e4" onclick="color('p3e4')">T</button>
+                <button type="button" name="e5" id="p3e5" onclick="color('p3e5')">Z</button>
+                <button type="button" name="e6" id="p3e6" onclick="color('p3e6')">U</button>
+                <button type="button" name="e7" id="p3e7" onclick="color('p3e7')">V</button>
+                <button type="button" name="e8" id="p3e8" onclick="color('p3e8')">W</button>
+                <button type="button" name="e9" id="p3e9" onclick="color('p3e9')">T</button>
+                <br>
+                <button type="button" name="f1" id="p3f1" onclick="color('p3f1')">E</button>
+                <button type="button" name="f2" id="p3f2" onclick="color('p3f2')">X</button>
+                <button type="button" name="f3" id="p3f3" onclick="color('p3f3')">Y</button>
+                <button type="button" name="f4" id="p3f4" onclick="color('p3f4')">Z</button>
+                <button type="button" name="f5" id="p3f5" onclick="color('p3f5')">A</button>
+                <button type="button" name="f6" id="p3f6" onclick="color('p3f6')">A</button>
+                <button type="button" name="f7" id="p3f7" onclick="color('p3f7')">B</button>
+                <button type="button" name="f8" id="p3f8" onclick="color('p3f8')">C</button>
+                <button type="button" name="f9" id="p3f9" onclick="color('p3f9')">E</button>
+                <br>
+                <button type="button" name="g1" id="p3g1" onclick="color('p3g1')">D</button>
+                <button type="button" name="g2" id="p3g2" onclick="color('p3g2')">E</button>
+                <button type="button" name="g3" id="p3g3" onclick="color('p3g3')">F</button>
+                <button type="button" name="g4" id="p3g4" onclick="color('p3g4')">G</button>
+                <button type="button" name="g5" id="p3g5" onclick="color('p3g5')">H</button>
+                <button type="button" name="g6" id="p3g6" onclick="color('p3g6')">I</button>
+                <button type="button" name="g7" id="p3g7" onclick="color('p3g7')">M</button>
+                <button type="button" name="g8" id="p3g8" onclick="color('p3g8')">J</button>
+                <button type="button" name="g9" id="p3g9" onclick="color('p3g9')">R</button>
+                <br>
+                <button type="button" name="h1" id="p3h1" onclick="color('p3h1')">T</button>
+                <button type="button" name="h2" id="p3h2" onclick="color('p3h2')">R</button>
+                <button type="button" name="h3" id="p3h3" onclick="color('p3h3')">E</button>
+                <button type="button" name="h4" id="p3h4" onclick="color('p3h4')">E</button>
+                <button type="button" name="h5" id="p3h5" onclick="color('p3h5')">K</button>
+                <button type="button" name="h6" id="p3h6" onclick="color('p3h6')">L</button>
+                <button type="button" name="h7" id="p3h7" onclick="color('p3h7')">M</button>
+                <button type="button" name="h8" id="p3h8" onclick="color('p3h8')">A</button>
+                <button type="button" name="h9" id="p3h9" onclick="color('p3h9')">N</button>
+                <br>
+                <button type="button" name="i1" id="p3i1" onclick="color('p3i1')">O</button>
+                <button type="button" name="i2" id="p3i2" onclick="color('p3i2')">P</button>
+                <button type="button" name="i3" id="p3i3" onclick="color('p3i3')">Q</button>
+                <button type="button" name="i4" id="p3i4" onclick="color('p3i4')">R</button>
+                <button type="button" name="i5" id="p3i5" onclick="color('p3i5')">S</button>
+                <button type="button" name="i6" id="p3i6" onclick="color('p3i6')">T</button>
+                <button type="button" name="i7" id="p3i7" onclick="color('p3i7')">U</button>
+                <button type="button" name="i8" id="p3i8" onclick="color('p3i8')">V</button>
+                <button type="button" name="i9" id="p3i9" onclick="color('p3i9')">W</button>
+
+            </p>
+
+            <!-- Hint section worked on by Abdulrahman -->
+
+            <a href="#hint3" onclick="showThisDiv('p-hint3')" id="link-to-hint3"><strong>Click here for a hint</strong></a>
+        
+            <div id="hint3">
+
+                <p id="p-hint3">
+                    <strong>
+                    <em>I am basically
+                    <br> a forest that shops for people
+                    </em>
+                    </strong>
+
+                </p>
+
+            </div> 
+
+            <br>
+          
+        </div>
+
+        <!--Name: Dhruvil Trivedi 
+            Banner ID: B00839059 
+            The CLICK ME button is developed by me in which user is expected to click the button in order to move to the next puzzel -->
+
+        <div id="third-submit">
+
+            <button type="button" name="submit" id="submit3" onclick="showGrid('2')"><strong>CLICK ME FOR THE NEXT LEVEL !</strong></button> 
+        
+        </div>
+    
+    
+        <div id="fourth-puzzle" class="puzzle">
+
+            <img src="img/apple.png" id = "apple" alt="apple-image">
+
+            <!--
+            Wenhui:
+            Apple image by Stephen Brady. URL: https://www.pngitem.com/middle/JJixx_how-to-draw-apple-draw-apple-with-color/
+            -->
+            
+        <p id="para4">
+
+            <button type="button" name="a1" id="p4a1" onclick="color('p4a1')">H</button>
+            <button type="button" name="a2" id="p4a2" onclick="color('p4a2')">G</button>
+            <button type="button" name="a3" id="p4a3" onclick="color('p4a3')">C</button>
+            <button type="button" name="a4" id="p4a4" onclick="color('p4a4')">A</button>
+            <button type="button" name="a5" id="p4a5" onclick="color('p4a5')">P</button>
+            <button type="button" name="a6" id="p4a6" onclick="color('p4a6')">T</button>
+            <button type="button" name="a7" id="p4a7" onclick="color('p4a7')">C</button>
+            <button type="button" name="a8" id="p4a8" onclick="color('p4a8')">B</button>
+            <button type="button" name="a9" id="p4a9" onclick="color('p4a9')">M</button>
+            <br>
+            <button type="button" name="b1" id="p4b1" onclick="color('p4b1')">M</button>
+            <button type="button" name="b2" id="p4b2" onclick="color('p4b2')">N</button>
+            <button type="button" name="b3" id="p4b3" onclick="color('p4b3')">A</button>
+            <button type="button" name="b4" id="p4b4" onclick="color('p4b4')">P</button>
+            <button type="button" name="b5" id="p4b5" onclick="color('p4b5')">P</button>
+            <button type="button" name="b6" id="p4b6" onclick="color('p4b6')">L</button>
+            <button type="button" name="b7" id="p4b7" onclick="color('p4b7')">E</button>
+            <button type="button" name="b8" id="p4b8" onclick="color('p4b8')">W</button>
+            <button type="button" name="b9" id="p4b9" onclick="color('p4b9')">B</button>
+            <br>
+            <button type="button" name="c1" id="p4c1" onclick="color('p4c1')">D</button>
+            <button type="button" name="c2" id="p4c2" onclick="color('p4c2')">A</button>
+            <button type="button" name="c3" id="p4c3" onclick="color('p4c3')">X</button>
+            <button type="button" name="c4" id="p4c4" onclick="color('p4c4')">N</button>
+            <button type="button" name="c5" id="p4c5" onclick="color('p4c5')">L</button>
+            <button type="button" name="c6" id="p4c6" onclick="color('p4c6')">K</button>
+            <button type="button" name="c7" id="p4c7" onclick="color('p4c7')">U</button>
+            <button type="button" name="c8" id="p4c8" onclick="color('p4c8')">G</button>
+            <button type="button" name="c9" id="p4c9" onclick="color('p4c9')">N</button>
+            <br>
+            <button type="button" name="d1" id="p4d1" onclick="color('p4d1')">Y</button>
+            <button type="button" name="d2" id="p4d2" onclick="color('p4d2')">E</button>
+            <button type="button" name="d3" id="p4d3" onclick="color('p4d3')">Q</button>
+            <button type="button" name="d4" id="p4d4" onclick="color('p4d4')">A</button>
+            <button type="button" name="d5" id="p4d5" onclick="color('p4d5')">D</button>
+            <button type="button" name="d6" id="p4d6" onclick="color('p4d6')">V</button>
+            <button type="button" name="d7" id="p4d7" onclick="color('p4d7')">G</button>
+            <button type="button" name="d8" id="p4d8" onclick="color('p4d8')">Q</button>
+            <button type="button" name="d9" id="p4d9" onclick="color('p4d9')">W</button>
+            <br>
+            <button type="button" name="e1" id="p4e1" onclick="color('p4e1')">S</button>
+            <button type="button" name="e2" id="p4e2" onclick="color('p4e2')">C</button>
+            <button type="button" name="e3" id="p4e3" onclick="color('p4e3')">T</button>
+            <button type="button" name="e4" id="p4e4" onclick="color('p4e4')">R</button>
+            <button type="button" name="e5" id="p4e5" onclick="color('p4e5')">B</button>
+            <button type="button" name="e6" id="p4e6" onclick="color('p4e6')">A</button>
+            <button type="button" name="e7" id="p4e7" onclick="color('p4e7')">V</button>
+            <button type="button" name="e8" id="p4e8" onclick="color('p4e8')">L</button>
+            <button type="button" name="e9" id="p4e9" onclick="color('p4e9')">Z</button>
+            <br>
+            <button type="button" name="f1" id="p4f1" onclick="color('p4f1')">L</button>
+            <button type="button" name="f2" id="p4f2" onclick="color('p4f2')">N</button>
+            <button type="button" name="f3" id="p4f3" onclick="color('p4f3')">P</button>
+            <button type="button" name="f4" id="p4f4" onclick="color('p4f4')">I</button>
+            <button type="button" name="f5" id="p4f5" onclick="color('p4f5')">F</button>
+            <button type="button" name="f6" id="p4f6" onclick="color('p4f6')">G</button>
+            <button type="button" name="f7" id="p4f7" onclick="color('p4f7')">D</button>
+            <button type="button" name="f8" id="p4f8" onclick="color('p4f8')">A</button>
+            <button type="button" name="f9" id="p4f9" onclick="color('p4f9')">B</button>
+            <br>
+            <button type="button" name="g1" id="p4g1" onclick="color('p4g1')">G</button>
+            <button type="button" name="g2" id="p4g2" onclick="color('p4g2')">C</button>
+            <button type="button" name="g3" id="p4g3" onclick="color('p4g3')">E</button>
+            <button type="button" name="g4" id="p4g4" onclick="color('p4g4')">P</button>
+            <button type="button" name="g5" id="p4g5" onclick="color('p4g5')">I</button>
+            <button type="button" name="g6" id="p4g6" onclick="color('p4g6')">I</button>
+            <button type="button" name="g7" id="p4g7" onclick="color('p4g7')">L</button>
+            <button type="button" name="g8" id="p4g8" onclick="color('p4g8')">B</button>
+            <button type="button" name="g9" id="p4g9" onclick="color('p4g9')">Z</button>
+            <br>
+            <button type="button" name="h1" id="p4h1" onclick="color('p4h1')">X</button>
+            <button type="button" name="h2" id="p4h2" onclick="color('p4h2')">W</button>
+            <button type="button" name="h3" id="p4h3" onclick="color('p4h3')">A</button>
+            <button type="button" name="h4" id="p4h4" onclick="color('p4h4')">Y</button>
+            <button type="button" name="h5" id="p4h5" onclick="color('p4h5')">R</button>
+            <button type="button" name="h6" id="p4h6" onclick="color('p4h6')">T</button>
+            <button type="button" name="h7" id="p4h7" onclick="color('p4h7')">U</button>
+            <button type="button" name="h8" id="p4h8" onclick="color('p4h8')">J</button>
+            <button type="button" name="h9" id="p4h9" onclick="color('p4h9')">N</button>
+            <br>
+            <button type="button" name="i1" id="p4i1" onclick="color('p4i1')">V</button>
+            <button type="button" name="i2" id="p4i2" onclick="color('p4i2')">C</button>
+            <button type="button" name="i3" id="p4i3" onclick="color('p4i3')">R</button>
+            <button type="button" name="i4" id="p4i4" onclick="color('p4i4')">R</button>
+            <button type="button" name="i5" id="p4i5" onclick="color('p4i5')">N</button>
+            <button type="button" name="i6" id="p4i6" onclick="color('p4i6')">J</button>
+            <button type="button" name="i7" id="p4i7" onclick="color('p4i7')">H</button>
+            <button type="button" name="i8" id="p4i8" onclick="color('p4i8')">A</button>
+            <button type="button" name="i9" id="p4i9" onclick="color('p4i9')">D</button>
+            
+        </p>
+
+        </div>
+
+        <!--Name: Dhruvil Trivedi 
+            Banner ID: B00839059 
+            The CLICK ME button is developed by me in which user is expected to click the button in order to move to the next puzzel -->
+
+        <div id="fourth-submit">
+            <button type="button" name="submit" id="submit4" onclick="showGrid('3')"><strong>CLICK ME FOR THE NEXT LEVEL !</strong></button> 
+        </div>  
+
+        <!-- All puzzle content for puzzles 4, 5 and 6 were worked on by Wenhui -->
+
+        <div id="fifth-puzzle" class="puzzle">
+
+            <img src="img/panda.png" id="panda" alt="panda-image">
+
+            <!--
+            Wenhui:
+            Panda image from Clipart Library
+            URL: http://clipart-library.com/clip-art/306-3067889_drawing-pandas-giant-panda-cute-cartoon-drawings-panda.htm
+            -->
+        <p id="para5">
+        
+            <button type="button" name="p5a1" id="p5a1" onclick="color('p5a1')">K</button>
+            <button type="button" name="p5a2" id="p5a2" onclick="color('p5a2')">S</button>
+            <button type="button" name="p5a3" id="p5a3" onclick="color('p5a3')">B</button>
+            <button type="button" name="p5a4" id="p5a4" onclick="color('p5a4')">U</button>
+            <button type="button" name="p5a5" id="p5a5" onclick="color('p5a5')">T</button>
+            <button type="button" name="p5a6" id="p5a6" onclick="color('p5a6')">P</button>
+            <button type="button" name="p5a7" id="p5a7" onclick="color('p5a7')">T</button>
+            <button type="button" name="p5a8" id="p5a8" onclick="color('p5a8')">R</button>
+            <button type="button" name="p5a9" id="p5a9" onclick="color('p5a9')">Q</button>
+            <br>
+            <button type="button" name="p5b1" id="p5b1" onclick="color('p5b1')">V</button>
+            <button type="button" name="p5b2" id="p5b2" onclick="color('p5b2')">F</button>
+            <button type="button" name="p5b3" id="p5b3" onclick="color('p5b3')">A</button>
+            <button type="button" name="p5b4" id="p5b4" onclick="color('p5b4')">N</button>
+            <button type="button" name="p5b5" id="p5b5" onclick="color('p5b5')">W</button>
+            <button type="button" name="p5b6" id="p5b6" onclick="color('p5b6')">R</button>
+            <button type="button" name="p5b7" id="p5b7" onclick="color('p5b7')">U</button>
+            <button type="button" name="p5b8" id="p5b8" onclick="color('p5b8')">T</button>
+            <button type="button" name="p5b9" id="p5b9" onclick="color('p5b9')">M</button>
+            <br>
+            <button type="button" name="p5c1" id="p5c1" onclick="color('p5c1')">A</button>
+            <button type="button" name="p5c2" id="p5c2" onclick="color('p5c2')">R</button>
+            <button type="button" name="p5c3" id="p5c3" onclick="color('p5c3')">W</button>
+            <button type="button" name="p5c4" id="p5c4" onclick="color('p5c4')">Q</button>
+            <button type="button" name="p5c5" id="p5c5" onclick="color('p5c5')">J</button>
+            <button type="button" name="p5c6" id="p5c6" onclick="color('p5c6')">K</button>
+            <button type="button" name="p5c7" id="p5c7" onclick="color('p5c7')">L</button>
+            <button type="button" name="p5c8" id="p5c8" onclick="color('p5c8')">D</button>
+            <button type="button" name="p5c9" id="p5c9" onclick="color('p5c9')">B</button>
+            <br>
+            <button type="button" name="p5d1" id="p5d1" onclick="color('p5d1')">Y</button>
+            <button type="button" name="p5d2" id="p5d2" onclick="color('p5d2')">O</button>
+            <button type="button" name="p5d3" id="p5d3" onclick="color('p5d3')">Y</button>
+            <button type="button" name="p5d4" id="p5d4" onclick="color('p5d4')">O</button>
+            <button type="button" name="p5d5" id="p5d5" onclick="color('p5d5')">F</button>
+            <button type="button" name="p5d6" id="p5d6" onclick="color('p5d6')">R</button>
+            <button type="button" name="p5d7" id="p5d7" onclick="color('p5d7')">V</button>
+            <button type="button" name="p5d8" id="p5d8" onclick="color('p5d8')">M</button>
+            <button type="button" name="p5d9" id="p5d9" onclick="color('p5d9')">A</button>
+            <br>
+            <button type="button" name="p5e1" id="p5e1" onclick="color('p5e1')">T</button>
+            <button type="button" name="p5e2" id="p5e2" onclick="color('p5e2')">O</button>
+            <button type="button" name="p5e3" id="p5e3" onclick="color('p5e3')">Y</button>
+            <button type="button" name="p5e4" id="p5e4" onclick="color('p5e4')">S</button>
+            <button type="button" name="p5e5" id="p5e5" onclick="color('p5e5')">H</button>
+            <button type="button" name="p5e6" id="p5e6" onclick="color('p5e6')">R</button>
+            <button type="button" name="p5e7" id="p5e7" onclick="color('p5e7')">U</button>
+            <button type="button" name="p5e8" id="p5e8" onclick="color('p5e8')">O</button>
+            <button type="button" name="p5e9" id="p5e9" onclick="color('p5e9')">D</button>
+            <br>
+            <button type="button" name="p5f1" id="p5f1" onclick="color('p5f1')">R</button>
+            <button type="button" name="p5f2" id="p5f2" onclick="color('p5f2')">U</button>
+            <button type="button" name="p5f3" id="p5f3" onclick="color('p5f3')">O</button>
+            <button type="button" name="p5f4" id="p5f4" onclick="color('p5f4')">L</button>
+            <button type="button" name="p5f5" id="p5f5" onclick="color('p5f5')">O</button>
+            <button type="button" name="p5f6" id="p5f6" onclick="color('p5f6')">C</button>
+            <button type="button" name="p5f7" id="p5f7" onclick="color('p5f7')">G</button>
+            <button type="button" name="p5f8" id="p5f8" onclick="color('p5f8')">E</button>
+            <button type="button" name="p5f9" id="p5f9" onclick="color('p5f9')">N</button>
+            <br>
+            <button type="button" name="p5g1" id="p5g1" onclick="color('p5g1')">G</button>
+            <button type="button" name="p5g2" id="p5g2" onclick="color('p5g2')">R</button>
+            <button type="button" name="p5g3" id="p5g3" onclick="color('p5g3')">E</button>
+            <button type="button" name="p5g4" id="p5g4" onclick="color('p5g4')">Y</button>
+            <button type="button" name="p5g5" id="p5g5" onclick="color('p5g5')">J</button>
+            <button type="button" name="p5g6" id="p5g6" onclick="color('p5g6')">K</button>
+            <button type="button" name="p5g7" id="p5g7" onclick="color('p5g7')">L</button>
+            <button type="button" name="p5g8" id="p5g8" onclick="color('p5g8')">R</button>
+            <button type="button" name="p5g9" id="p5g9" onclick="color('p5g9')">A</button>
+            <br>
+            <button type="button" name="p5h1" id="p5h1" onclick="color('p5h1')">T</button>
+            <button type="button" name="p5h2" id="p5h2" onclick="color('p5h2')">O</button>
+            <button type="button" name="p5h3" id="p5h3" onclick="color('p5h3')">P</button>
+            <button type="button" name="p5h4" id="p5h4" onclick="color('p5h4')">Y</button>
+            <button type="button" name="p5h5" id="p5h5" onclick="color('p5h5')">R</button>
+            <button type="button" name="p5h6" id="p5h6" onclick="color('p5h6')">A</button>
+            <button type="button" name="p5h7" id="p5h7" onclick="color('p5h7')">C</button>
+            <button type="button" name="p5h8" id="p5h8" onclick="color('p5h8')">V</button>
+            <button type="button" name="p5h9" id="p5h9" onclick="color('p5h9')">P</button>
+            <br>
+            <button type="button" name="p5i1" id="p5i1" onclick="color('p5i1')">W</button>
+            <button type="button" name="p5i2" id="p5i2" onclick="color('p5i2')">A</button>
+            <button type="button" name="p5i3" id="p5i3" onclick="color('p5i3')">H</button>
+            <button type="button" name="p5i4" id="p5i4" onclick="color('p5i4')">T</button>
+            <button type="button" name="p5i5" id="p5i5" onclick="color('p5i5')">I</button>
+            <button type="button" name="p5i6" id="p5i6" onclick="color('p5i6')">H</button>
+            <button type="button" name="p5i7" id="p5i7" onclick="color('p5i7')">K</button>
+            <button type="button" name="p5i8" id="p5i8" onclick="color('p5i8')">Y</button>
+            <button type="button" name="p5i9" id="p5i9" onclick="color('p5i9')">R</button>
+
+        </p>
+
+        </div>
+    
+        <!--Name: Dhruvil Trivedi 
+            Banner ID: B00839059 
+            The CLICK ME button is developed by me in which user is expected to click the button in order to move to the next puzzel -->
+
+        <div id="fifth-submit">
+            <button type="button" name="submit" id="submit5" onclick="showGrid('4')"><strong>CLICK ME FOR THE NEXT LEVEL !</strong></button> 
+        </div> 
+
+        <div id="sixth-puzzle" class="puzzle">
+
+            <img src="img/steamship.jpeg" id="steamship"alt = "steamship-image">
+            <!--
+            Wenhui:
+            Steamship image by Maryna Kriuchenko
+            URL: https://www.dreamstime.com/stock-illustration-vector-drawing-steamship-big-obsolete-naval-ss-isolated-white-backdrop-freehand-outline-black-ink-hand-drawn-picture-logo-image94734448
+            -->
+
+            <p id="para6">
+
+                <button type="button" name="p6a1" id="p6a1" onclick="color('p6a1')">H</button>
+                <button type="button" name="p6a2" id="p6a2" onclick="color('p6a2')">J</button>
+                <button type="button" name="p6a3" id="p6a3" onclick="color('p6a3')">Y</button>
+                <button type="button" name="p6a4" id="p6a4" onclick="color('p6a4')">A</button>
+                <button type="button" name="p6a5" id="p6a5" onclick="color('p6a5')">D</button>
+                <button type="button" name="p6a6" id="p6a6" onclick="color('p6a6')">C</button>
+                <button type="button" name="p6a7" id="p6a7" onclick="color('p6a7')">A</button>
+                <button type="button" name="p6a8" id="p6a8" onclick="color('p6a8')">W</button>
+                <button type="button" name="p6a9" id="p6a9" onclick="color('p6a9')">R</button>
+                <br>
+                <button type="button" name="p6b1" id="p6b1" onclick="color('p6b1')">Y</button>
+                <button type="button" name="p6b2" id="p6b2" onclick="color('p6b2')">T</button>
+                <button type="button" name="p6b3" id="p6b3" onclick="color('p6b3')">H</button>
+                <button type="button" name="p6b4" id="p6b4" onclick="color('p6b4')">I</button>
+                <button type="button" name="p6b5" id="p6b5" onclick="color('p6b5')">N</button>
+                <button type="button" name="p6b6" id="p6b6" onclick="color('p6b6')">G</button>
+                <button type="button" name="p6b7" id="p6b7" onclick="color('p6b7')">J</button>
+                <button type="button" name="p6b8" id="p6b8" onclick="color('p6b8')">U</button>
+                <button type="button" name="p6b9" id="p6b9" onclick="color('p6b9')">V</button>
+                <br>
+                <button type="button" name="p6c1" id="p6c1" onclick="color('p6c1')">P</button>
+                <button type="button" name="p6c2" id="p6c2" onclick="color('p6c2')">I</button>
+                <button type="button" name="p6c3" id="p6c3" onclick="color('p6c3')">H</button>
+                <button type="button" name="p6c4" id="p6c4" onclick="color('p6c4')">S</button>
+                <button type="button" name="p6c5" id="p6c5" onclick="color('p6c5')">M</button>
+                <button type="button" name="p6c6" id="p6c6" onclick="color('p6c6')">A</button>
+                <button type="button" name="p6c7" id="p6c7" onclick="color('p6c7')">E</button>
+                <button type="button" name="p6c8" id="p6c8" onclick="color('p6c8')">T</button>
+                <button type="button" name="p6c9" id="p6c9" onclick="color('p6c9')">S</button>
+                <br>
+                <button type="button" name="p6d1" id="p6d1" onclick="color('p6d1')">Q</button>
+                <button type="button" name="p6d2" id="p6d2" onclick="color('p6d2')">W</button>
+                <button type="button" name="p6d3" id="p6d3" onclick="color('p6d3')">E</button>
+                <button type="button" name="p6d4" id="p6d4" onclick="color('p6d4')">R</button>
+                <button type="button" name="p6d5" id="p6d5" onclick="color('p6d5')">T</button>
+                <button type="button" name="p6d6" id="p6d6" onclick="color('p6d6')">Y</button>
+                <button type="button" name="p6d7" id="p6d7" onclick="color('p6d7')">C</button>
+                <button type="button" name="p6d8" id="p6d8" onclick="color('p6d8')">A</button>
+                <button type="button" name="p6d9" id="p6d9" onclick="color('p6d9')">N</button>
+                <br>
+                <button type="button" name="p6e1" id="p6e1" onclick="color('p6e1')">F</button>
+                <button type="button" name="p6e2" id="p6e2" onclick="color('p6e2')">I</button>
+                <button type="button" name="p6e3" id="p6e3" onclick="color('p6e3')">X</button>
+                <button type="button" name="p6e4" id="p6e4" onclick="color('p6e4')">B</button>
+                <button type="button" name="p6e5" id="p6e5" onclick="color('p6e5')">S</button>
+                <button type="button" name="p6e6" id="p6e6" onclick="color('p6e6')">G</button>
+                <button type="button" name="p6e7" id="p6e7" onclick="color('p6e7')">H</button>
+                <button type="button" name="p6e8" id="p6e8" onclick="color('p6e8')">K</button>
+                <button type="button" name="p6e9" id="p6e9" onclick="color('p6e9')">I</button>
+                <br>
+                <button type="button" name="p6f1" id="p6f1" onclick="color('p6f1')">V</button>
+                <button type="button" name="p6f2" id="p6f2" onclick="color('p6f2')">X</button>
+                <button type="button" name="p6f3" id="p6f3" onclick="color('p6f3')">J</button>
+                <button type="button" name="p6f4" id="p6f4" onclick="color('p6f4')">S</button>
+                <button type="button" name="p6f5" id="p6f5" onclick="color('p6f5')">K</button>
+                <button type="button" name="p6f6" id="p6f6" onclick="color('p6f6')">C</button>
+                <button type="button" name="p6f7" id="p6f7" onclick="color('p6f7')">O</button>
+                <button type="button" name="p6f8" id="p6f8" onclick="color('p6f8')">R</button>
+                <button type="button" name="p6f9" id="p6f9" onclick="color('p6f9')">H</button>
+                <br>
+                <button type="button" name="p6g1" id="p6g1" onclick="color('p6g1')">M</button>
+                <button type="button" name="p6g2" id="p6g2" onclick="color('p6g2')">A</button>
+                <button type="button" name="p6g3" id="p6g3" onclick="color('p6g3')">X</button>
+                <button type="button" name="p6g4" id="p6g4" onclick="color('p6g4')">H</button>
+                <button type="button" name="p6g5" id="p6g5" onclick="color('p6g5')">R</button>
+                <button type="button" name="p6g6" id="p6g6" onclick="color('p6g6')">E</button>
+                <button type="button" name="p6g7" id="p6g7" onclick="color('p6g7')">Z</button>
+                <button type="button" name="p6g8" id="p6g8" onclick="color('p6g8')">W</button>
+                <button type="button" name="p6g9" id="p6g9" onclick="color('p6g9')">O</button>
+                <br>
+                <button type="button" name="p6h1" id="p6h1" onclick="color('p6h1')">P</button>
+                <button type="button" name="p6h2" id="p6h2" onclick="color('p6h2')">L</button>
+                <button type="button" name="p6h3" id="p6h3" onclick="color('p6h3')">U</button>
+                <button type="button" name="p6h4" id="p6h4" onclick="color('p6h4')">R</button>
+                <button type="button" name="p6h5" id="p6h5" onclick="color('p6h5')">F</button>
+                <button type="button" name="p6h6" id="p6h6" onclick="color('p6h6')">G</button>
+                <button type="button" name="p6h7" id="p6h7" onclick="color('p6h7')">W</button>
+                <button type="button" name="p6h8" id="p6h8" onclick="color('p6h8')">E</button>
+                <button type="button" name="p6h9" id="p6h9" onclick="color('p6h9')">A</button>
+                <br>
+                <button type="button" name="p6i1" id="p6i1" onclick="color('p6i1')">X</button>
+                <button type="button" name="p6i2" id="p6i2" onclick="color('p6i2')">Z</button>
+                <button type="button" name="p6i3" id="p6i3" onclick="color('p6i3')">Y</button>
+                <button type="button" name="p6i4" id="p6i4" onclick="color('p6i4')">D</button>
+                <button type="button" name="p6i5" id="p6i5" onclick="color('p6i5')">P</button>
+                <button type="button" name="p6i6" id="p6i6" onclick="color('p6i6')">A</button>
+                <button type="button" name="p6i7" id="p6i7" onclick="color('p6i7')">Z</button>
+                <button type="button" name="p6i8" id="p6i8" onclick="color('p6i8')">M</button>
+                <button type="button" name="p6i9" id="p6i9" onclick="color('p6i9')">Q</button>
+
+            </p>
+
+        </div>
+        
+        <!--Name: Dhruvil Trivedi 
+            Banner ID: B00839059 
+            The CLICK ME button is developed by me in which user is expected to click the button in order to move to the next puzzel -->
+
+        <div id="sixth-submit">
+            <button type="button" name="submit" id="submit6" onclick="showGrid('5')"><strong>CLICK ME TO VIEW THE PUZZLE AND CLICK TWICE TO SUBMIT</strong></button> 
+        </div> 
+
+        <script src = "js/main.js"></script> 
+
+    </body>
+
+</html>
